@@ -13,8 +13,10 @@ import java.util.List;
 public class EntryArea {
   private final AnchorPane anchorPane = new AnchorPane();
   private final TableView<TelefonEntry> tableView;
+  private ObservableList<TelefonEntry> dataList;
   
   public EntryArea(ObservableList<TelefonEntry> telefonEntries) {
+    dataList = telefonEntries;
     tableView = new TableView<>();
     AnchorPane.setLeftAnchor(tableView, 10.0);
     AnchorPane.setRightAnchor(tableView, 10.0);
@@ -61,7 +63,14 @@ public class EntryArea {
   public ObservableList<TelefonEntry> getSelectedEntries() {
     return tableView.getSelectionModel().getSelectedItems();
   }
-  
+
+  public void removeEntries(List<TelefonEntry> entries) {
+      for (int i = 0; i < entries.size(); i++) {
+          TelefonEntry entry = entries.get(i);
+          dataList.remove(entry);
+      }
+  }
+
   private static class EditingCell extends TableCell<TelefonEntry, String> {
     
     private TextField textField;
