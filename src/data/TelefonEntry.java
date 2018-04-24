@@ -10,9 +10,9 @@ public class TelefonEntry {
   private boolean isNew = true;
   
   public TelefonEntry() {
-    this.lastName.set("...");
-    this.firstName.set("...");
-    this.number.set("...");
+    this.lastName.set("Max");
+    this.firstName.set("Mustermann");
+    this.number.set("112");
     isNew = true;
   }
   

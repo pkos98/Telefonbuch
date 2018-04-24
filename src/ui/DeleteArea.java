@@ -1,4 +1,4 @@
-package sample;
+package ui;
 
 import javafx.scene.Node;
 import javafx.scene.control.Button;
@@ -8,6 +8,8 @@ public class DeleteArea {
   
   private final AnchorPane pane = new AnchorPane();
   private final Button deleteButton = new Button("Delete");
+
+  public Button getDeleteButton() { return deleteButton;}
   
   public DeleteArea() {
   
