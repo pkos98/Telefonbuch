@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/TelefonEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/TelefonEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/DeleteArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/DeleteArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -93,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TelefonEntry.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TelefonEntry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/TelefonEntry.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="e#729#730#0" expanded="true" />
                 <element signature="e#760#761#0" expanded="true" />
@@ -112,17 +109,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+            <state relative-caret-position="183">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1405#2034#0" />
                 <element signature="e#2082#2223#0" />
-                <element signature="e#3049#3050#0" expanded="true" />
-                <element signature="e#3077#3078#0" expanded="true" />
+                <element signature="e#2284#2318#0" />
               </folding>
             </state>
           </provider>
@@ -181,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/sample/ui/AddArea.java" />
         <option value="$PROJECT_DIR$/src/sample/DeleteArea.java" />
         <option value="$PROJECT_DIR$/src/ui/AddArea.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/data/TelefonEntry.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
       </list>
     </option>
   </component>
@@ -371,12 +367,20 @@
       <workItem from="1523536915527" duration="1979000" />
       <workItem from="1523621121592" duration="264000" />
       <workItem from="1523968723303" duration="1527000" />
-      <workItem from="1524572205670" duration="1430000" />
+      <workItem from="1524572205670" duration="1636000" />
     </task>
+    <task id="LOCAL-00001" summary="EVERYTHING">
+      <created>1524573699377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524573699377</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13748000" />
+    <option name="totallyTimeSpent" value="13954000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,13 +405,13 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.44738835" side_tool="true" visible="true" weight="0.30313015" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.52342606" weight="0.32591414" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.43378997" visible="true" weight="0.24678273" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43378997" visible="true" weight="0.24678273" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
       <window_info id="Structure" order="1" sideWeight="0.56621003" side_tool="true" weight="0.24304539" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" x="0" y="533" width="1280" height="267" id="Debug" order="13" sideWeight="0.55261165" visible="true" weight="0.30313015" />
+      <window_info active="true" anchor="bottom" x="0" y="533" width="1280" height="267" id="Debug" order="13" sideWeight="0.55261165" visible="true" weight="0.30313015" />
       <window_info anchor="bottom" id="Profiler" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
@@ -428,6 +432,8 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="EVERYTHING" />
+    <option name="LAST_COMMIT_MESSAGE" value="EVERYTHING" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -799,24 +805,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1405#2034#0" />
-            <element signature="e#2082#2223#0" />
-            <element signature="e#3049#3050#0" expanded="true" />
-            <element signature="e#3077#3078#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/TelefonEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <element signature="e#729#730#0" expanded="true" />
             <element signature="e#760#761#0" expanded="true" />
@@ -826,6 +818,19 @@
             <element signature="e#1078#1079#0" expanded="true" />
             <element signature="e#1197#1198#0" expanded="true" />
             <element signature="e#1219#1220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1405#2034#0" />
+            <element signature="e#2082#2223#0" />
+            <element signature="e#2284#2318#0" />
           </folding>
         </state>
       </provider>

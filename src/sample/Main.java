@@ -71,14 +71,6 @@ public class Main extends Application {
 
         primaryStage.setTitle("Telefonbuch");
         Scene scene = new Scene(root, 600, 500);
-        /*scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent event) {
-                if (event.getCode() != KeyCode.DELETE)
-                    return;
-                entryArea.removeEntries(entryArea.getSelectedEntries());
-            }
-        });*/
         scene.setOnKeyPressed((e) -> {
             KeyEvent event = (KeyEvent) e;
             if (event.getCode() != KeyCode.DELETE)
