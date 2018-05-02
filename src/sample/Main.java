@@ -30,6 +30,7 @@ public class Main extends Application {
         HBox addDeleteHBox = new HBox();
 
         addDeleteHBox.setAlignment(Pos.CENTER_RIGHT);
+        // Contains ALL, even OUT-FILTERED entries
         ObservableList<TelefonEntry> rootList = FXCollections.observableArrayList();
         EntryArea entryArea = new EntryArea(rootList);
         rootList.add(new TelefonEntry("Patrick", "Kostas", "213981204809"));
@@ -38,16 +39,13 @@ public class Main extends Application {
 
         // Set Event-handlers
         searchArea.getSearchField().setOnKeyReleased((e) -> {
-            entryArea.setItems(searchEntries(rootList, searchArea.getSearchText()));
+            entryArea.filter(searchArea.getSearchText());
         });
         searchArea.getSearchButton().setOnMouseClicked((e) -> {
-            entryArea.setItems(searchEntries(rootList, searchArea.getSearchText()));
+            entryArea.filter(searchArea.getSearchText());
         });
         deleteArea.getDeleteButton().setOnMouseClicked((e) -> {
-            List<TelefonEntry> selectedEntries = entryArea.getSelectedEntries();
-            rootList.removeAll(selectedEntries);
-            entryArea.getItems().removeAll(entryArea.getSelectedEntries());
-            entryArea.setItems(rootList);
+            entryArea.removeSelectedEntries();
         });
         addArea.getAddButton().setOnMouseClicked((e) -> {
             rootList.add(new TelefonEntry());
@@ -55,6 +53,12 @@ public class Main extends Application {
         loadArea.getLoadButton().setOnMouseClicked((e) -> {
             //rootList.clear();
         });
+        entryArea.getPane().setOnKeyPressed((e) -> {
+            KeyEvent event = (KeyEvent) e;
+            if (event.getCode() == KeyCode.DELETE)
+                entryArea.removeSelectedEntries();
+        });
+
 
         addDeleteHBox.getChildren().add(deleteArea.getPane());
         addDeleteHBox.getChildren().add(addArea.getPane());
@@ -66,30 +70,9 @@ public class Main extends Application {
 
         primaryStage.setTitle("Telefonbuch");
         Scene scene = new Scene(root, 600, 500);
-        entryArea.getPane().setOnKeyPressed((e) -> {
-            KeyEvent event = (KeyEvent) e;
-            if (event.getCode() != KeyCode.DELETE)
-                return;
-            rootList.removeAll(entryArea.getSelectedEntries());
-            entryArea.getItems().removeAll(entryArea.getSelectedEntries());
-        });
 
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
-
-    public List<TelefonEntry> searchEntries(List<TelefonEntry> list, String filter) {
-        if (filter == null || filter.isEmpty())
-            return list;
-        filter = filter.toLowerCase();
-        LinkedList<TelefonEntry> filteredList = new LinkedList<>();
-        for (int i = 0; i < list.size(); i++) {
-            TelefonEntry iterEntry = list.get(i);
-            if (iterEntry.getFirstName().toLowerCase().contains(filter) ||
-                    iterEntry.getLastName().toLowerCase().contains(filter))
-                filteredList.add(iterEntry);
-        }
-        return filteredList;
     }
 
     public static void main(String[] args) {

@@ -56,4 +56,10 @@ public class TelefonEntry implements Serializable {
     return isNew;
   }
 
+  @Override
+  public String toString() {
+      return getFirstName() + "\\" + getLastName() + "\\" + getNumber();
+
+  }
+
 }
