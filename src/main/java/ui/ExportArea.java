@@ -30,8 +30,10 @@ public class ExportArea extends Area {
     public void exportFile(List<TelefonEntry> entriesToSave) {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setTitle("Choose directory to save addressbook in");
-        Path path = directoryChooser.showDialog((Stage) exportButton.getScene().getWindow()).toPath();
-        path = new File(path.toString() + "/address.json" ).toPath();
+        File chosenfile = directoryChooser.showDialog((Stage) exportButton.getScene().getWindow());
+        if (chosenfile == null)
+           return;
+        Path path = new File(chosenfile.toPath().toString() + "/address.json" ).toPath();
         JsonFactory factory = new JsonFactory();
         try (OutputStream os = Files.newOutputStream(path);
              JsonGenerator jg = factory.createGenerator(os)) {
