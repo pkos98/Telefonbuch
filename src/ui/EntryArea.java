@@ -10,19 +10,17 @@ import javafx.util.Callback;
 
 import java.util.List;
 
-public class EntryArea {
-  private final AnchorPane anchorPane = new AnchorPane();
+public class EntryArea extends Area {
   private final TableView<TelefonEntry> tableView;
-  private ObservableList<TelefonEntry> dataList;
-  
+
   public EntryArea(ObservableList<TelefonEntry> telefonEntries) {
-    dataList = telefonEntries;
     tableView = new TableView<>();
-    AnchorPane.setLeftAnchor(tableView, 10.0);
-    AnchorPane.setRightAnchor(tableView, 10.0);
+    tableView.setItems(telefonEntries);
+    AnchorPane.setLeftAnchor(tableView, 0.0);
+    AnchorPane.setRightAnchor(tableView, 0.0);
     AnchorPane.setTopAnchor(tableView, 0.0);
     AnchorPane.setBottomAnchor(tableView, 0.0);
-    anchorPane.getChildren().addAll(tableView);
+    pane.getChildren().addAll(tableView);
     
     Callback<TableColumn<TelefonEntry, String>, TableCell<TelefonEntry, String>> cellFactory = p -> new EditingCell();
     
@@ -54,21 +52,14 @@ public class EntryArea {
     } else {
       tableView.setItems(FXCollections.observableList(items));
     }
+    tableView.refresh();
   }
-  
-  public AnchorPane getAnchorPane() {
-    return anchorPane;
-  }
-  
-  public ObservableList<TelefonEntry> getSelectedEntries() {
-    return tableView.getSelectionModel().getSelectedItems();
+  public List<TelefonEntry> getItems() {
+      return tableView.getItems();
   }
 
-  public void removeEntries(List<TelefonEntry> entries) {
-      for (int i = 0; i < entries.size(); i++) {
-          TelefonEntry entry = entries.get(i);
-          dataList.remove(entry);
-      }
+  public ObservableList<TelefonEntry> getSelectedEntries() {
+    return tableView.getSelectionModel().getSelectedItems();
   }
 
   private static class EditingCell extends TableCell<TelefonEntry, String> {

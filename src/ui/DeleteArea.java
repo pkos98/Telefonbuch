@@ -4,9 +4,8 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
-public class DeleteArea {
+public class DeleteArea extends Area {
   
-  private final AnchorPane pane = new AnchorPane();
   private final Button deleteButton = new Button("Delete");
 
   public Button getDeleteButton() { return deleteButton;}
@@ -19,9 +18,5 @@ public class DeleteArea {
     deleteButton.setPrefWidth(70.0);
     
     pane.getChildren().addAll(deleteButton);
-  }
-  
-  public Node getPane() {
-    return pane;
   }
 }

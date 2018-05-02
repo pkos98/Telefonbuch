@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/LoadArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/TelefonEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/TelefonEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/SearchArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/SearchArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/AddArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AddArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/DeleteArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/DeleteArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/EntryArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/EntryArea.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,79 +68,25 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchArea.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntryArea.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/EntryArea.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2447#2448#0" expanded="true" />
-                <element signature="e#2512#2513#0" expanded="true" />
-                <element signature="class#EditingCell#0;class#EntryArea#0" />
-                <element signature="method#getCurrentRow#0;class#EntryArea#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TelefonEntry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/TelefonEntry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding>
-                <element signature="e#729#730#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
-                <element signature="e#1219#1220#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+    <leaf>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="16">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1405#2034#0" />
-                <element signature="e#2082#2223#0" />
-                <element signature="e#2284#2318#0" />
+                <element signature="method#searchEntries#0;class#Main#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteArea.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/DeleteArea.java">
+      <file leaf-file-name="SearchArea.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ui/SearchArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -142,6 +97,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -151,6 +107,8 @@
       <find>action</find>
       <find>remove</find>
       <find>entry</find>
+      <find>setIe</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -162,7 +120,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/sample/SearchArea.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/ui/SearchArea.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/data/TelefonEntry.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/sample/Main.java" root0="SKIP_INSPECTION" />
   </component>
@@ -171,14 +129,21 @@
       <list>
         <option value="$PROJECT_DIR$/src/sample/EntryArea.java" />
         <option value="$PROJECT_DIR$/src/sample/IMouseClickListener.java" />
-        <option value="$PROJECT_DIR$/src/sample/SearchArea.java" />
-        <option value="$PROJECT_DIR$/src/ui/EntryArea.java" />
         <option value="$PROJECT_DIR$/src/sample/AddArea.java" />
         <option value="$PROJECT_DIR$/src/sample/ui/AddArea.java" />
         <option value="$PROJECT_DIR$/src/sample/DeleteArea.java" />
+        <option value="$PROJECT_DIR$/src/sample/LoadArea.java" />
+        <option value="$PROJECT_DIR$/src/ui/Area.java" />
+        <option value="$PROJECT_DIR$/src/ui/DeleteArea.java" />
         <option value="$PROJECT_DIR$/src/ui/AddArea.java" />
+        <option value="$PROJECT_DIR$/src/ui/LoadArea.java" />
         <option value="$PROJECT_DIR$/src/data/TelefonEntry.java" />
+        <option value="$PROJECT_DIR$/src/ui/MainWindow.form" />
+        <option value="$PROJECT_DIR$/src/ui/mainWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/SearchArea.java" />
+        <option value="$PROJECT_DIR$/src/ui/EntryArea.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/ui/SearchArea.java" />
       </list>
     </option>
   </component>
@@ -188,7 +153,9 @@
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -197,7 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,12 +175,6 @@
               <item name="Telefonbuch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Telefonbuch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Telefonbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Telefonbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Telefonbuch" type="b2602c69:ProjectViewProjectNode" />
@@ -233,6 +193,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,7 +211,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -367,7 +328,15 @@
       <workItem from="1523536915527" duration="1979000" />
       <workItem from="1523621121592" duration="264000" />
       <workItem from="1523968723303" duration="1527000" />
-      <workItem from="1524572205670" duration="1636000" />
+      <workItem from="1524572205670" duration="4129000" />
+      <workItem from="1524651906939" duration="1588000" />
+      <workItem from="1524653656618" duration="2057000" />
+      <workItem from="1524673449886" duration="840000" />
+      <workItem from="1524674741348" duration="142000" />
+      <workItem from="1525015485188" duration="1282000" />
+      <workItem from="1525080133767" duration="949000" />
+      <workItem from="1525183767532" duration="698000" />
+      <workItem from="1525253452520" duration="123000" />
     </task>
     <task id="LOCAL-00001" summary="EVERYTHING">
       <created>1524573699377</created>
@@ -376,11 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524573699377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AddArea">
+      <created>1524573888269</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524573888269</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13954000" />
+    <option name="totallyTimeSpent" value="24126000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,34 +373,91 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3287483" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32750398" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Event Log" order="5" sideWeight="0.5545657" side_tool="true" weight="0.2953125" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.44738835" side_tool="true" visible="true" weight="0.30313015" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.52342606" weight="0.32591414" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.4996215" weight="0.3294893" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47842544" side_tool="true" weight="0.30313015" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.52157456" weight="0.32454696" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43378997" visible="true" weight="0.24678273" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.43378997" visible="true" weight="0.27327782" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
       <window_info id="Structure" order="1" sideWeight="0.56621003" side_tool="true" weight="0.24304539" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" anchor="bottom" x="0" y="533" width="1280" height="267" id="Debug" order="13" sideWeight="0.55261165" visible="true" weight="0.30313015" />
+      <window_info anchor="bottom" x="0" y="533" width="1280" height="267" id="Debug" order="13" sideWeight="0.5495837" weight="0.30313015" />
       <window_info anchor="bottom" id="Profiler" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Problems" order="9" />
-      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4996215" weight="0.3261944" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="right" id="JetGradle" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
       <window_info anchor="right" id="Maven Projects" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.4996215" weight="0.3294893" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43378997" visible="true" weight="0.24678273" />
+      <window_info id="Structure" order="1" sideWeight="0.56621003" side_tool="true" weight="0.24304539" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3287483" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.44814533" side_tool="true" visible="true" weight="0.30313015" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Profiler" order="7" />
+      <window_info anchor="right" id="JetGradle" order="5" />
+      <window_info id="Event Log" order="5" sideWeight="0.5545657" side_tool="true" weight="0.2953125" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info active="true" anchor="bottom" x="0" y="533" width="1280" height="267" id="Debug" order="14" sideWeight="0.55185467" visible="true" weight="0.30313015" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.52342606" weight="0.32591414" />
+      <window_info anchor="bottom" id="Application Servers" order="8" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32750398" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -433,11 +466,12 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="EVERYTHING" />
-    <option name="LAST_COMMIT_MESSAGE" value="EVERYTHING" />
+    <MESSAGE value="AddArea" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddArea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -445,22 +479,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/SearchArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="12" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -482,13 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-            <element signature="class#EditingCell#0;class#EntryArea#0" />
-            <element signature="method#getCurrentRow#0;class#EntryArea#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,15 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/SearchArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="12" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,60 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-            <element signature="class#EditingCell#0;class#EntryArea#0" />
-            <element signature="method#getCurrentRow#0;class#EntryArea#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="12" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/DeleteArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/EntryArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-            <element signature="class#EditingCell#0;class#EntryArea#0" />
-            <element signature="method#getCurrentRow#0;class#EntryArea#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,15 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/SearchArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="15" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-            <element signature="class#EditingCell#0;class#EntryArea#0" />
-            <element signature="method#getCurrentRow#0;class#EntryArea#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,15 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/SearchArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,15 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/SearchArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,15 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/SearchArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,81 +686,85 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/javafx/beans/property/StringPropertyBase.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/javafx/beans/property/SimpleStringProperty.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/IMouseClickListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchArea.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/Area.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="96">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/EntryArea.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/LoadArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-            <element signature="class#EditingCell#0;class#EntryArea#0" />
-            <element signature="method#getCurrentRow#0;class#EntryArea#0" />
-          </folding>
+        <state relative-caret-position="256">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/MainWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/ui/AddArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="3964" selection-start-line="3964" selection-end-line="3964" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/DeleteArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/TelefonEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/EntryArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="16">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1405#2034#0" />
-            <element signature="e#2082#2223#0" />
-            <element signature="e#2284#2318#0" />
+            <element signature="method#searchEntries#0;class#Main#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/SearchArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>

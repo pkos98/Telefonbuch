@@ -2,7 +2,9 @@ package data;
 
 import javafx.beans.property.SimpleStringProperty;
 
-public class TelefonEntry {
+import java.io.Serializable;
+
+public class TelefonEntry implements Serializable {
   
   private final SimpleStringProperty lastName = new SimpleStringProperty();
   private final SimpleStringProperty  firstName = new SimpleStringProperty();
@@ -53,4 +55,5 @@ public class TelefonEntry {
   public boolean isNew() {
     return isNew;
   }
+
 }

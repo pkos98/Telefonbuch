@@ -4,86 +4,96 @@ import data.TelefonEntry;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.ObservableListBase;
-import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import ui.*;
 
-import java.security.Key;
 import java.util.LinkedList;
-
-
-// was ist das boot sdk
-// und was ist der unterschied zum platform setting sdk
+import java.util.List;
 
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 
         BorderPane root = new BorderPane();
         SearchArea searchArea = new SearchArea();
         DeleteArea deleteArea = new DeleteArea();
         AddArea addArea = new AddArea();
-        HBox hBox = new HBox();
+        LoadArea loadArea = new LoadArea();
+        HBox addDeleteHBox = new HBox();
+
+        addDeleteHBox.setAlignment(Pos.CENTER_RIGHT);
         ObservableList<TelefonEntry> rootList = FXCollections.observableArrayList();
         EntryArea entryArea = new EntryArea(rootList);
         rootList.add(new TelefonEntry("Patrick", "Kostas", "213981204809"));
         rootList.add(new TelefonEntry("Der", "Test", "213981204809"));
         rootList.add(new TelefonEntry("Ein", "Anderer", "213981204809"));
+
+        // Set Event-handlers
+        searchArea.getSearchField().setOnKeyReleased((e) -> {
+            entryArea.setItems(searchEntries(rootList, searchArea.getSearchText()));
+        });
         searchArea.getSearchButton().setOnMouseClicked((e) -> {
-            String s = searchArea.getSearchText();
-            LinkedList<TelefonEntry> viewList = new LinkedList<>();
-            if (s.isEmpty()) {
-                entryArea.setItems(rootList);
-                return;
-            }
-            for (int i = 0; i < rootList.size(); i++) {
-                TelefonEntry iterEntry = rootList.get(i);
-                if (iterEntry.getFirstName().contains(s) || iterEntry.getLastName().contains(s))
-                    viewList.add(iterEntry);
-            }
-            entryArea.setItems(viewList);
+            entryArea.setItems(searchEntries(rootList, searchArea.getSearchText()));
         });
         deleteArea.getDeleteButton().setOnMouseClicked((e) -> {
-            entryArea.removeEntries(entryArea.getSelectedEntries());
+            List<TelefonEntry> selectedEntries = entryArea.getSelectedEntries();
+            rootList.removeAll(selectedEntries);
+            entryArea.getItems().removeAll(entryArea.getSelectedEntries());
+            entryArea.setItems(rootList);
         });
         addArea.getAddButton().setOnMouseClicked((e) -> {
             rootList.add(new TelefonEntry());
         });
+        loadArea.getLoadButton().setOnMouseClicked((e) -> {
+            //rootList.clear();
+        });
 
-        hBox.getChildren().add(deleteArea.getPane());
-        hBox.getChildren().add(addArea.getPane());
+        addDeleteHBox.getChildren().add(deleteArea.getPane());
+        addDeleteHBox.getChildren().add(addArea.getPane());
+
         root.setTop(searchArea.getPane());
-        root.setBottom(hBox);
-        //root.setBottom(deleteArea.getPane());
-        root.setCenter(entryArea.getAnchorPane());
+        root.setBottom(addDeleteHBox);
+        root.setCenter(entryArea.getPane());
+        root.setRight(loadArea.getPane());
 
         primaryStage.setTitle("Telefonbuch");
         Scene scene = new Scene(root, 600, 500);
-        scene.setOnKeyPressed((e) -> {
+        entryArea.getPane().setOnKeyPressed((e) -> {
             KeyEvent event = (KeyEvent) e;
             if (event.getCode() != KeyCode.DELETE)
                 return;
-            entryArea.removeEntries(entryArea.getSelectedEntries());
+            rootList.removeAll(entryArea.getSelectedEntries());
+            entryArea.getItems().removeAll(entryArea.getSelectedEntries());
         });
 
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
+    public List<TelefonEntry> searchEntries(List<TelefonEntry> list, String filter) {
+        if (filter == null || filter.isEmpty())
+            return list;
+        filter = filter.toLowerCase();
+        LinkedList<TelefonEntry> filteredList = new LinkedList<>();
+        for (int i = 0; i < list.size(); i++) {
+            TelefonEntry iterEntry = list.get(i);
+            if (iterEntry.getFirstName().toLowerCase().contains(filter) ||
+                    iterEntry.getLastName().toLowerCase().contains(filter))
+                filteredList.add(iterEntry);
+        }
+        return filteredList;
+    }
 
     public static void main(String[] args) {
         launch(args);
     }
+
 }

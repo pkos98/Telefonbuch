@@ -4,9 +4,8 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
-public class AddArea {
+public class AddArea extends Area {
 
-    private final AnchorPane pane = new AnchorPane();
     private final Button addButton = new Button("Add");
 
     public Button getAddButton() { return addButton;}
@@ -21,7 +20,4 @@ public class AddArea {
         pane.getChildren().addAll(addButton);
     }
 
-    public Node getPane() {
-        return pane;
-    }
 }
