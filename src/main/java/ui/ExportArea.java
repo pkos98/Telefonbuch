@@ -16,13 +16,12 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class ExportArea extends Area {
-    private final Button exportButton = new Button("Save");
+    private final Button exportButton = new Button("Export");
 
     public ExportArea() {
 
-        AnchorPane.setLeftAnchor(exportButton, 20.0);
+        AnchorPane.setLeftAnchor(exportButton, 10.0);
         AnchorPane.setTopAnchor(exportButton, 10.0);
-        AnchorPane.setRightAnchor(exportButton, 10.0);
         AnchorPane.setBottomAnchor(exportButton, 10.0);
         pane.getChildren().addAll(exportButton);
     }
@@ -32,8 +31,8 @@ public class ExportArea extends Area {
         directoryChooser.setTitle("Choose directory to save addressbook in");
         File chosenfile = directoryChooser.showDialog((Stage) exportButton.getScene().getWindow());
         if (chosenfile == null)
-           return;
-        Path path = new File(chosenfile.toPath().toString() + "/address.json" ).toPath();
+            return;
+        Path path = new File(chosenfile.toPath().toString() + "/address.json").toPath();
         JsonFactory factory = new JsonFactory();
         try (OutputStream os = Files.newOutputStream(path);
              JsonGenerator jg = factory.createGenerator(os)) {
