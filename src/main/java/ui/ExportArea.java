@@ -21,6 +21,7 @@ public class ExportArea extends Area {
     public ExportArea() {
 
         AnchorPane.setLeftAnchor(exportButton, 10.0);
+        AnchorPane.setRightAnchor(exportButton, 10.0);
         AnchorPane.setTopAnchor(exportButton, 10.0);
         AnchorPane.setBottomAnchor(exportButton, 10.0);
         pane.getChildren().addAll(exportButton);
