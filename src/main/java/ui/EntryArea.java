@@ -27,12 +27,9 @@ public class EntryArea extends Area {
             if (event.getCode() == KeyCode.DELETE) {
                 removeSelectedEntries();
             }
-        });
-        tableView.setOnKeyPressed((e) -> {
-            KeyEvent event = (KeyEvent) e;
-            if (event.getCode() == KeyCode.INSERT) {
+            else if(event.getCode() == KeyCode.DELETE)
                 rootList.add(new TelefonEntry());
-            }
+
         });
     }
 

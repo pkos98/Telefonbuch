@@ -35,7 +35,7 @@ public class SearchArea {
         AnchorPane.setRightAnchor(searchButton, 10.0);
         AnchorPane.setBottomAnchor(searchButton, 10.0);
         searchButton.setPrefWidth(70.0);
-        pane.getChildren().addAll(searchField, searchButton);
+        pane.getChildren().addAll(searchField);
     }
 
     public Node getPane() {

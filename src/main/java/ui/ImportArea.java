@@ -25,13 +25,13 @@ public class ImportArea extends Area {
 
     public ImportArea() {
 
-
         AnchorPane.setLeftAnchor(importButton, 10.0);
         AnchorPane.setTopAnchor(importButton, 10.0);
         AnchorPane.setBottomAnchor(importButton, 10.0);
         importButton.setMaxHeight(15);
 
         pane.getChildren().addAll(importButton);
+
     }
 
     public List<TelefonEntry> importFile() {
