@@ -1,9 +1,9 @@
 package ui;
 
 import data.TelefonEntry;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
-import javafx.scene.Node;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
@@ -13,8 +13,8 @@ public class EntryArea extends Area {
     private ObservableList<TelefonEntry> rootList;
     private FilteredList<TelefonEntry> filteredList;
 
-    public EntryArea(ObservableList<TelefonEntry> telefonEntries) {
-        rootList = telefonEntries;
+    public EntryArea() {
+        rootList = FXCollections.observableArrayList();
         filteredList = new FilteredList<>(rootList, p -> true);
         tableView = new TelephoneTableView(filteredList);
         AnchorPane.setLeftAnchor(tableView, 0.0);
@@ -22,15 +22,6 @@ public class EntryArea extends Area {
         AnchorPane.setTopAnchor(tableView, 0.0);
         AnchorPane.setBottomAnchor(tableView, 0.0);
         pane.getChildren().addAll(tableView);
-        tableView.setOnKeyPressed((e) -> {
-            KeyEvent event = (KeyEvent) e;
-            if (event.getCode() == KeyCode.DELETE) {
-                removeSelectedEntries();
-            }
-            else if(event.getCode() == KeyCode.DELETE)
-                rootList.add(new TelefonEntry());
-
-        });
     }
 
     public void filter(String filter) {

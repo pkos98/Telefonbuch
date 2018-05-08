@@ -44,6 +44,13 @@ public class Main extends Application {
         topHBox.getChildren().add(searchArea.getPane());
         topHBox.setAlignment(Pos.CENTER_LEFT);
 
+        VBox centerVBox = new VBox();
+        Button btMoveGuestToMain = new Button("<--");
+        Button btMoveMainToGuest = new Button("-->");
+        centerVBox.getChildren().add(btMoveGuestToMain);
+        centerVBox.getChildren().add(btMoveMainToGuest);
+        centerVBox.setAlignment(Pos.CENTER);
+
         HBox bottomHBox = new HBox();
         TextField focusedTableLabel = new TextField("No table selected");
         focusedTableLabel.setPrefWidth(400.0);
@@ -55,17 +62,12 @@ public class Main extends Application {
         bottomHBox.getChildren().add(addArea.getPane());
         bottomHBox.setAlignment(Pos.CENTER);
 
-        VBox centerVBox = new VBox();
-        centerVBox.getChildren().add(new Button());
-        centerVBox.getChildren().add(new Button());
-        centerVBox.setAlignment(Pos.CENTER);
-
         // Contains ALL, even FILTERED-OUT entries
-        EntryArea mainArea = new EntryArea(mainList);
-        EntryArea guestArea = new EntryArea(FXCollections.observableArrayList());
-        mainList.add(new TelefonEntry("Kostas", "Patrick", "213981204809"));
-        mainList.add(new TelefonEntry("Test", "Der", "213981204809"));
-        mainList.add(new TelefonEntry("Einer", "Noch", "213981204809"));
+        EntryArea mainArea = new EntryArea();
+        EntryArea guestArea = new EntryArea();
+        mainArea.add(new TelefonEntry("Kostas", "Patrick", "213981204809"));
+        mainArea.add(new TelefonEntry("Test", "Der", "213981204809"));
+        mainArea.add(new TelefonEntry("Einer", "Noch", "213981204809"));
         guestArea.add(new TelefonEntry());
 
         // Set Event-handlers
@@ -99,6 +101,56 @@ public class Main extends Application {
         exportArea.getExportButton().setOnMouseClicked((e) -> {
             exportArea.exportFile(mainArea.getTableView().getItems());
         });
+        btMoveGuestToMain.setOnMouseClicked((e) -> {
+            List<TelefonEntry> entries = guestArea.getSelectedEntries();
+            for (int i = 0; i < entries.size(); i++) {
+                TelefonEntry entry = entries.get(i);
+                mainArea.add(entries.get(i));
+            }
+            guestArea.removeSelectedEntries();
+        });
+        btMoveMainToGuest.setOnMouseClicked((e) -> {
+            List<TelefonEntry> entries = mainArea.getSelectedEntries();
+            for (int i = 0; i < entries.size(); i++) {
+                TelefonEntry entry = entries.get(i);
+                guestArea.add(entries.get(i));
+            }
+            mainArea.removeSelectedEntries();
+        });
+        mainArea.getTableView().setOnKeyPressed((e) -> {
+            KeyEvent event = (KeyEvent) e;
+            if (event.getCode() == KeyCode.RIGHT) {
+                List<TelefonEntry> entries = mainArea.getSelectedEntries();
+                for (int i = 0; i < entries.size(); i++) {
+                    TelefonEntry entry = entries.get(i);
+                    guestArea.add(entries.get(i));
+                }
+                mainArea.removeSelectedEntries();
+            }
+            else if (event.getCode() == KeyCode.DELETE) {
+                mainArea.removeSelectedEntries();
+            }
+            else if(event.getCode() == KeyCode.INSERT)
+                mainArea.add(new TelefonEntry());
+        });
+        guestArea.getTableView().setOnKeyPressed((e) -> {
+            KeyEvent event = (KeyEvent) e;
+            if (event.getCode() == KeyCode.LEFT) {
+                List<TelefonEntry> entries = guestArea.getSelectedEntries();
+                for (int i = 0; i < entries.size(); i++) {
+                    TelefonEntry entry = entries.get(i);
+                    mainArea.add(entries.get(i));
+                }
+                guestArea.removeSelectedEntries();
+            }
+            else if (event.getCode() == KeyCode.DELETE) {
+                guestArea.removeSelectedEntries();
+            }
+            else if(event.getCode() == KeyCode.INSERT)
+                guestArea.add(new TelefonEntry());
+        });
+
+
 
         root.setTop(topHBox);
         root.setBottom(bottomHBox);
